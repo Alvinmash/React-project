@@ -1,0 +1,21 @@
+/* eslint-disable import/prefer-default-export */
+export const typeColors = {
+  Bug: '#ADBD20',
+  Dark: '#735A4A',
+  Dragon: '#7B63E7',
+  Electric: '#FCCE57',
+  Fairy: '#F7B5F7',
+  Fighting: '#A55339',
+  Fire: '#F75331',
+  Flying: '#9CADF7',
+  Ghost: '#6363B5',
+  Grass: '#7BCE53',
+  Ground: '#C1A559',
+  Ice: '#5ACEE7',
+  Normal: '#BBB5A7',
+  Poison: '#B55AA5',
+  Psychic: '#FC72A5',
+  Rock: '#BDA55A',
+  Steel: '#ADADC6',
+  Water: '#3992E9',
+}

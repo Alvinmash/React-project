@@ -1,0 +1,7 @@
+### Ignore Webpack.dev.js and the bundle.js it creates
+webpack.dev.js
+
+bundle.js
+
+#ignore .indexPugInteractino.js file
+indexPugInteraction.js

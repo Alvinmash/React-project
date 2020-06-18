@@ -1,0 +1,95 @@
+div(class="right-container")
+  div(class="method" id="getAll")
+    h2 Method
+    h3(class="get spacing") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/pokemon
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns a list all of the pokemon in the database.
+
+  div(class="method hidden" id="getPokemonById")
+    h2 Method
+    h3(class="spacing get") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/pokemon/{name}
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns the pokemon associated with the {name}.
+
+  div(class="method hidden" id="getGeneration")
+    h2 Method
+    h3(class="spacing get") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/generation/{genId}
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns the list of pokemon from gemeration passed with {genId}.
+
+  div(class="method hidden" id="getTypes")
+    h2 Method
+    h3(class="spacing get") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/types/
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns a list of all the types.
+
+  div(class="method hidden" id="getTypesById")
+    h2 Method
+    h3(class="spacing get") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/types/{name}
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns the type and all pokemon associated with the type {name} provided.
+
+  div(class="method hidden" id="getForms")
+    h2 Method
+    h3(class="spacing get") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/forms/
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns a list of all the forms.
+
+  div(class="method hidden" id="getFormsById")
+    h2 Method
+    h3(class="spacing get") GET
+    h2 Route
+    h3(class="spacing") http://localhost:1337/forms/{name}
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Returns the form and all pokemon associated with the form {name} provided.
+
+  div(class="method hidden" id="postPokemon")
+    h2 Method
+    h3(class="spacing post") POST
+    h2 Route
+    h3(class="spacing") http://localhost:1337/pokemon
+    h2 Headers
+    h3(class="spacing") Content-Type: application/json
+    h2 Body
+    h3(class="spacing") { "generationNumber": "1", "name": "Bulbasaur", "Types": "['grass', 'poison']", "fromId": "null" }
+    h2 Decription
+    h3(class="spacing")
+      | Saves a new pokemon to the database. (Note: the fromId is if the pokemon is an evolution of
+      | another pokemon Bulbasuar has 'fromId: null' as its a base evolution where as Ivysaur has
+      | 'fromId: 1' as it evolves from Bulbasaur)
+
+  div(class="method hidden" id="deletePokemonById")
+    h2 Method
+    h3(class="spacing delete") DELETE
+    h2 Route
+    h3(class="spacing") http://localhost:1337/pokemon/{name}
+    h2 Headers
+    h3(class="spacing") None needed
+    h2 Decription
+    h3(class="spacing") Deletes the pokemon associated with the {name}.

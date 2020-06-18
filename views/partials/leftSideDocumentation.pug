@@ -1,0 +1,36 @@
+div(class="left-container")
+  div(class="tabs highlighted" id="getAll" onclick="updateSelected('getAll')")
+    span(class="get") GET
+    span /pokemon
+
+  div(class="tabs" id="getPokemonById" onclick="updateSelected('getPokemonById')")
+    span(class="get") GET
+    span /pokemon/{name}
+
+  div(class="tabs" id="getGeneration" onclick="updateSelected('getGeneration')")
+    span(class="get") GET
+    span /generation/{genId}
+
+  div(class="tabs" id="getTypes" onclick="updateSelected('getTypes')")
+    span(class="get") GET
+    span /types/
+
+  div(class="tabs" id="getTypesById" onclick="updateSelected('getTypesById')")
+    span(class="get") GET
+    span /types/{name}
+
+  div(class="tabs" id="getForms" onclick="updateSelected('getForms')")
+    span(class="get") GET
+    span /forms/
+
+  div(class="tabs" id="getFormsById" onclick="updateSelected('getFormsById')")
+    span(class="get") GET
+    span /forms/{name}
+
+  div(class="tabs" id="postPokemon" onclick="updateSelected('postPokemon')")
+    span(class="post") POST
+    span /pokemon
+
+  div(class="tabs" id="deletePokemonById" onclick="updateSelected('deletePokemonById')")
+    span(class="delete") DELETE
+    span /pokemon/{name}
